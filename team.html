@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Our Team</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="bg-cover bg-center min-h-screen flex items-center justify-center relative py-12 px-4"
+    style="background-image: url(&quot;bg.jpg&quot;)"
+  >
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+
+    <section class="relative z-10 w-full max-w-lg p-8 bg-white rounded-2xl shadow-xl">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Teacher Registration</h1>
+        <p class="text-gray-500 text-sm">Join our team of expert educators</p>
+      </div>
+
+      <form class="space-y-5" onsubmit="event.preventDefault(); window.location.href='index.html';">
+        <div class="space-y-1">
+          <label class="block text-sm font-medium text-gray-700" for="fullname">Full Name</label>
+          <input
+            id="fullname"
+            type="text"
+            placeholder="Enter your full name"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+        </div>
+
+        <div class="space-y-1">
+          <label class="block text-sm font-medium text-gray-700" for="email">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="space-y-1">
+            <label class="block text-sm font-medium text-gray-700" for="experience">Teaching Experience</label>
+            <input
+              id="experience"
+              type="text"
+              placeholder="e.g. 5 Years"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+          </div>
+
+          <div class="space-y-1">
+            <label class="block text-sm font-medium text-gray-700" for="qualifications">Qualifications</label>
+            <input
+              id="qualifications"
+              type="text"
+              placeholder="e.g. PhD, MSc"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <label class="block text-sm font-medium text-gray-700" for="subject">Subject to Teach</label>
+          <input
+            id="subject"
+            type="text"
+            placeholder="e.g. Mathematics, Python"
+            required
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+        </div>
+
+        <div class="space-y-2 pt-2">
+          <label class="block text-sm font-medium text-gray-700">Preferred Teaching Model</label>
+          <div class="flex items-center space-x-6">
+            <label class="flex items-center text-sm text-gray-700 cursor-pointer">
+              <input
+                type="radio"
+                name="teaching-model"
+                value="online"
+                required
+                class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 mr-2"
+              />
+              Online
+            </label>
+            <label class="flex items-center text-sm text-gray-700 cursor-pointer">
+              <input
+                type="radio"
+                name="teaching-model"
+                value="in-class"
+                required
+                class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500 mr-2"
+              />
+              In Class
+            </label>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <button
+            type="submit"
+            class="w-full py-2.5 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Submit Registration
+          </button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
